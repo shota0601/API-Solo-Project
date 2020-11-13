@@ -1,0 +1,33 @@
+{
+   "name": "y",
+   "version": "y",
+   "description": "y",
+   "main": "y",
+   "repository": "y",
+   "author": "y",
+   "license": "y",
+   "private": true,
+   "scripts": {
+      "start": "ts-node src/index.ts",
+      "lint": "eslint --fix --ext .js .",
+      "test": "mocha --inspect -r ts-node/register src/tests/index.ts"
+   },
+   "dependencies": {
+      "@types/es6-promise": "^3.3.0",
+      "@types/mocha": "^8.0.4",
+      "body-parser": "^1.18.1",
+      "cai": "^1.0.2",
+      "chai": "^4.2.0",
+      "chai-http": "^4.3.0",
+      "express": "^4.15.4",
+      "mocha": "^8.2.1",
+      "pg": "^8.4.0",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "0.2.29"
+   },
+   "devDependencies": {
+      "@types/node": "^8.0.29",
+      "ts-node": "3.3.0",
+      "typescript": "3.3.3333"
+   }
+}
