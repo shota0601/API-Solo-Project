@@ -13,8 +13,6 @@ info:
   description: "userRankテーブルのレコードを登録・更新・取得・削除するAPI"
 # APIのホスト名 
 host: "localhost:3000"
-# API共通のpathを記載する
-basePath: "/user"
 # 対象のテーブル名
 tags:
 - name: "userRank"
@@ -22,10 +20,8 @@ tags:
 schemes:
 # スキーマ
 - "http"
-# APIのエントリポイントを記述
-paths:
-  # URIを記載する
-  /products:
+# API共通のpathを記載する
+basePath: "/user"
   # GETリクエスト
     get:
       # 前述したタグ名
