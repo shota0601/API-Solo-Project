@@ -19,3 +19,4 @@ export class UserRank {
     rank: number;
 
 }
+export default UserRank;

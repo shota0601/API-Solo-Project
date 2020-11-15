@@ -9,7 +9,7 @@ import {UserRank} from "./entity/User";
 createConnection().then(async connection => {
 
     // create express app
-    const app = express();
+    const app = express.default();
     app.use(bodyParser.json());
 
     // register express routes from defined application routes

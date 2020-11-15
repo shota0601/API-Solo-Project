@@ -10,7 +10,7 @@
    "scripts": {
       "start": "ts-node src/index.ts",
       "lint": "eslint --fix --ext .js .",
-      "test": "mocha --inspect -r ts-node/register src/tests/index.ts"
+      "test": "mocha --inspect -r ts-node/register src/tests/_pokemonApi.js"
    },
    "dependencies": {
       "@types/es6-promise": "^3.3.0",
