@@ -11,22 +11,22 @@ info:
   version: "1.0.0"
   # APIの説明
   description: "userRankテーブルのレコードを登録・更新・取得・削除するAPI"
-#APIのホスト名 
+# APIのホスト名 
 host: "localhost:3000"
-#API共通のpathを記載する
+# API共通のpathを記載する
 basePath: "/user"
-# 対象のテーブル名?を書く
+# 対象のテーブル名を書く
 tags:
 - name: "userRank"
-  description: "userRankテーブル"
+- description: "userRankテーブル"
 schemes:
 # スキーマ
 - "http"
 # APIのエントリポイントを記述
 paths:
-  #URIを記載する
+  # URIを記載する
   /products:
-    # GETリクエスト
+  # GETリクエスト
     get:
       # 前述したタグ名
       tags: 
@@ -66,7 +66,7 @@ paths:
               rank:
                 type: "integer"
                 example: "1"          
-    # POSTリクエスト
+  # POSTリクエスト
     post:
       tags: 
       - "userRank"
@@ -125,8 +125,7 @@ paths:
               message:
                 type: "string"
                 example: "Bad Request"
-  /{id}:
-    # PUTリクエスト
+  # PUTリクエスト(/{id}:)
     put:
       tags:
       - "userRank"
@@ -189,8 +188,7 @@ paths:
               message:
                 type: "string"
                 example: "Bad Request"
-  /{id}:
-    # DELETEリクエスト
+  # DELETEリクエスト(/{id}:)
     delete:
       tags:
       - "userRank"
