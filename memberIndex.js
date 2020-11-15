@@ -15,7 +15,7 @@ function get() {
     const textId = document.createElement('div');
     const kaigyo1 = document.createElement('br');
     containerEl.append(kaigyo1)
-    textId.innerText = String(JSON.parse(data)[i].id) + "," + String(JSON.parse(data)[i].firstName) +"   ," + String( JSON.parse(data)[i].lastName) + "   ," + String(JSON.parse(data)[i].age) + "  ," + String(JSON.parse(data)[i].rank);
+    textId.innerText = String(JSON.parse(data)[i].id) + "        ," + String(JSON.parse(data)[i].firstName) +"      ," + String( JSON.parse(data)[i].lastName) + "        ," + String(JSON.parse(data)[i].age) + "  ," + String(JSON.parse(data)[i].rank);
     containerEl.append(textId)
     }
     }

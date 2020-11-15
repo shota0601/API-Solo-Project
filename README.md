@@ -3,8 +3,6 @@
 
 # swaggerのバージョン定義
 swagger: "2.0"
-# APIについての情報を書く
-info:
   # API名
   title: "遊園地会員情報API"
   # APIのバージョン
@@ -13,19 +11,13 @@ info:
   description: "userRankテーブルのレコードを登録・更新・取得・削除するAPI"
 # APIのホスト名 
 host: "localhost:3000"
-# API共通のpathを記載する
+# API共通のpath
 basePath: "/user"
-# 対象のテーブル名を書く
-tags:
+# 対象のテーブル名
 - name: "userRank"
 - description: "userRankテーブル"
-schemes:
 # スキーマ
 - "http"
-# APIのエントリポイントを記述
-paths:
-  # URIを記載する
-  /products:
   # GETリクエスト
     get:
       # 前述したタグ名
@@ -125,12 +117,14 @@ paths:
               message:
                 type: "string"
                 example: "Bad Request"
-  # PUTリクエスト(/{id}:)
+  # PUTリクエスト
     put:
       tags:
       - "userRank"
       summary: "遊園地会員情報更新"
       description: "URIで指定したidのuserRankテーブルの遊園地会員情報を更新する"
+      path:
+      - "/{id}:"
       produces:
       - "application/json"
       parameters:
@@ -188,12 +182,14 @@ paths:
               message:
                 type: "string"
                 example: "Bad Request"
-  # DELETEリクエスト(/{id}:)
+  # DELETEリクエスト
     delete:
       tags:
       - "userRank"
       summary: "遊園地会員情報削除"
       description: "URIで指定したidのuserRankテーブルの遊園地会員情報を削除する"
+      path:
+      - "/{id}:"
       produces: 
       - "apllication/json"
       parameters:
