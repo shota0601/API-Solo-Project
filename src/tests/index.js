@@ -21,7 +21,7 @@ describe("API Server", () => {
     const res = await request.get("/users");
     //assert
     res.should.have.status(200);
-    //(JSON.parse(res.text).length).should.deep.equal(11);
+    (JSON.parse(res.text).length).should.deep.equal(11);
   });
 
 

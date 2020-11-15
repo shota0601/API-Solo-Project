@@ -55,8 +55,6 @@ const setupServer = () => {
     res.status(200);
     res.send(resAccount);
   }); 
-
-
   return app;
 };
 

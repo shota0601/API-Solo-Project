@@ -1,12 +1,10 @@
 .box1 {
-    border: 5px solid green;
     height: 70px;
     width: 350px;
     margin-left: auto;
     margin-right: auto;
 }
 .box2 {
-    border: 5px solid blue;
     width: 300px;
     margin-left: auto;
     margin-right: auto;

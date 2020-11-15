@@ -18,5 +18,6 @@ export class UserRank {
     @Column()
     rank: number;
 
+
 }
 export default UserRank;

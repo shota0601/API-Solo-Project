@@ -10,7 +10,7 @@ function get() {
     containerEl.append("メンバーの全件データを出力します")
     containerEl.append(kaigyo)
     containerEl.append("Id,firstName,lastName,age,rank")
-    for(let i = 0; i<50 ;i++){
+    for(let i = 0; i<JSON.parse(data).length ;i++){
     //const containerEl = document.querySelector('#newsfeed');
     const textId = document.createElement('div');
     const kaigyo1 = document.createElement('br');
@@ -31,10 +31,6 @@ function post() {
     var lastName = document.getElementById("lastName").value;
     var age = document.getElementById("age").value;
     var rank = document.getElementById("rank").value;
-    //request.body.firstName = firstname;
-    //request.body.lastName = lastName;
-    //request.body.age = age;
-    //request.body.rank = rank;
     // レスポンスが返ってきた時の処理を記述 
     request.onload = function () {
     // レスポンスが返ってきた時の処理
