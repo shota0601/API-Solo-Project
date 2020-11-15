@@ -5,9 +5,6 @@ import DataBaseConnetionManager from "./database";
 import { Repository, getRepository, DeleteResult,createConnection } from "typeorm";
 //const express = require("express");
 
-interface UserRankInter extends UserRank {
-}
-
 const setupServer = () => {
   /**
    * Create, set up and return your express server, split things into separate files if it becomes too long!

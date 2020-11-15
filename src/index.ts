@@ -5,12 +5,13 @@ import * as bodyParser from "body-parser";
 import {Request, Response} from "express";
 import {Routes} from "./routes";
 import {UserRank} from "./entity/User";
+import cors from 'cors';
 
 createConnection().then(async connection => {
 
     // create express app
     const app = express.default();
-    app.use(bodyParser.json());
+    app.use(bodyParser.json(),cors({ origin: true, credentials: true }));
 
     // register express routes from defined application routes
     Routes.forEach(route => {
@@ -30,22 +31,6 @@ createConnection().then(async connection => {
 
     // start express server
     app.listen(3000);
-
-    // insert new users for test
-    /*
-    await connection.manager.save(connection.manager.create(UserRank, {
-        firstName: "Timber",
-        lastName: "Saw",
-        age: 27,
-        rank: 1
-    }));
-    await connection.manager.save(connection.manager.create(UserRank, {
-        firstName: "Phantom",
-        lastName: "Assassin",
-        age: 24,
-        rank: 2
-    }));
-    */
 
     let savedPhotos = await connection.manager.find(UserRank);
     await console.log("All photos from the db: ", savedPhotos);

@@ -28,3 +28,4 @@ export class UserController {
         return this.userRepository.findOne(request.params.id);
     }
 }
+module.exports = { UserController };

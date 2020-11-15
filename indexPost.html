@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>メンバー追加</title>
+  <link rel="stylesheet" href="./memberIndex.css">
+  <script type="text/javascript" src="memberIndex.js"></script>
+</head>
+<body>
+  <div class="box1">
+    <p id="eid_date"></p>
+    <h>●●遊園地会員メンバー追加ページ</h>
+  </div>
+  <div class="box2">
+    <div class="cp_iptxt">
+        <h>FirstName</h>
+        <input type="text" id="firstName" placeholder="Input FirstName">
+        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="cp_iptxt">
+      <h>LastName</h>
+      <input type="text" id="lastName" placeholder="Input LastName">
+      <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="cp_iptxt">
+      <h>age</h>
+      <input type="text" id="age" placeholder="Input Age">
+      <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="cp_iptxt">
+      <h>rank</h>
+      <input type="text" id="rank" placeholder="Input Rank">
+      <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="button-area">
+        <button type="submit" name="name" value="値"  onclick="post()" class="btn-square">追加</button>
+    </div>
+  </div>
+  <div id="newsfeed">
+    
+  </div>
+</body>
+</html>

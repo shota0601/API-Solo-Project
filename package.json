@@ -10,7 +10,7 @@
    "scripts": {
       "start": "ts-node src/index.ts",
       "lint": "eslint --fix --ext .js .",
-      "test": "mocha --inspect -r ts-node/register src/tests/_pokemonApi.js"
+      "test": "mocha --inspect -r ts-node/register src/tests/index.js"
    },
    "dependencies": {
       "@types/es6-promise": "^3.3.0",
@@ -19,6 +19,7 @@
       "cai": "^1.0.2",
       "chai": "^4.2.0",
       "chai-http": "^4.3.0",
+      "cors": "^2.8.5",
       "express": "^4.15.4",
       "mocha": "^8.2.1",
       "pg": "^8.4.0",

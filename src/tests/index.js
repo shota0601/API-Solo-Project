@@ -3,7 +3,6 @@ const chaiHttp = require("chai-http");
 chai.use(chaiHttp);
 const { setupServer } = require("../server");
 chai.should();
-//const expect = chai.expect;
 
 /*
  * This sprint you will have to create all tests yourself, TDD style.
@@ -11,7 +10,7 @@ chai.should();
  * The same kind of structure that you encountered in lecture.express will be provided here.
  */
 const server = setupServer();
-describe("Pokemon API Server", () => {
+describe("API Server", () => {
   let request;
   beforeEach(() => {
     request = chai.request(server);
@@ -66,6 +65,6 @@ describe("Pokemon API Server", () => {
     res.should.be.json;
     //assert
     res.should.have.status(200);
-    JSON.parse(res.text).length .should.deep.equal(36);
+    JSON.parse(res.text).length.should.deep.equal(36);
   });
 });
